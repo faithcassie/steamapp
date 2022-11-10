@@ -1,0 +1,216 @@
+/* MOBILE SCREEN */
+@media only screen and (max-width: 765px) {
+    /* header {
+        background-image: linear-gradient(#4900a2, rgba(21, 21, 21, 0));
+        
+    } */
+    .header-sup{
+        /* width: 90%; */
+        /* position: fixed; */
+        padding-top: 0;
+        /* background-image: linear-gradient(#4900a2, rgba(21, 21, 21, 0.113)); */
+    }
+    .logo {
+        width: 25%;
+        /* background-color: rgb(32, 32, 32); */
+    }
+    .logo img {
+        width: 90%;
+        height: auto;
+    }
+    .menu-wrap .toggler {
+        position: relative;
+        left: 1rem;
+        width: 100%;
+        z-index: 3;
+        opacity: 0;
+        padding-left: 1rem;
+        /* background-color: rgb(236, 32, 66); */
+        width: 70px;
+        height: 60px;
+    }
+
+    .menu-wrap .hamburger {
+        position: absolute;
+        /* top: 0;
+        left: 0; */
+        z-index: 1;
+        width: 50px;
+        height: 40px;
+        padding: 10px;
+        margin-left: 1rem;
+        /* background: black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    /* Hamburger Line */
+    .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+   
+    /* Hamburger Lines - Top & Bottom */
+    .menu-wrap .hamburger > div::before,
+    .menu-wrap .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 1px;
+        background: inherit;
+    }
+
+    /* Moves Line Down */
+    .menu-wrap .hamburger > div::after {
+        top: 10px;
+    }
+
+    /* Toggler Animation */
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+
+    /* Turns Lines Into X */
+    .menu-wrap .toggler:checked + .hamburger > div:before,
+    .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    /* Rotate On Hover When Checked */
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+    }
+    /* Show Menu */
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+  }
+    .menu-wrap .menu{
+        position: relative;
+        top: 4rem;
+        left: -2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: start;
+        line-height: 1.6rem;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(21, 21, 21, 0), #1507459e);
+        overflow: hidden;
+        visibility: hidden;
+    }  
+    .icon_list ul li img {
+        height: 25px;
+    }
+    .slides {
+        position: relative;
+        z-index: -2;
+        top: 0;
+        left: 0;
+    }
+    .slide-bg {
+        /* visibility: hidden; */
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .slide-fg {
+        width: 70%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 30%;
+        filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.268));
+    }
+    /* Next & previous buttons */
+    .prev, .next { 
+        top: 25%;
+    }
+
+    /* body styling */
+
+    .all-games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .filter-container {
+        background-image: linear-gradient(rgb(41, 35, 103), rgba(50, 50, 50, 0.257));
+        width: 100%;
+        /* min-width: 260px; */
+        height: auto;
+        padding: 2rem;
+        padding-bottom: 0.5rem;
+        margin: 2.5rem 0;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .filter-option {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    label {
+        color: white;
+    }
+    select {
+        background-color: white;
+        width: 100%;
+        padding: 10px 1rem;
+        margin: 0.5rem 0;
+        border-radius: 8px;
+    }
+
+    .filter-btn {
+        width: 100px;
+        margin: 2rem;
+        background-color: rgb(255, 159, 49);
+        border: none;
+        padding: 5px 1rem;
+        border-radius: 8px;
+    }
+    #game_list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .game > h3 {
+        font-size: medium;
+    }
+    .game > p {
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 1360px) {
+    .all-games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-container {
+        width: 70%;
+        
+    }
+    #game_list {
+
+        align-items: center;
+        padding: 3rem;
+    }
+}
+

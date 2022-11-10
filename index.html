@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steam game store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-sup">
+        <div class="logo">
+          <a href="#logo"
+            ><img
+              src="photo/logo_steam.svg"
+              id="logo"
+              alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler" >
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <a href="#forum" class="link1">Forum</a>
+              <a href="#support"class="link1">Support</a>
+            </div>    
+          </div>
+          <div class="icon_list">
+              <div>
+                  <div>
+                      <ul>
+                          <li><input type="text" placeholder="Search..." id="search-name"></li>
+                          <li><a href="#" onclick="searchBtn()"><img src="photo/search_icon.svg" class="search" alt="search_icon"/></a></li>
+                          <li><a href="#cart"><img src="photo/cart_icon.svg" alt="cart_icon" /></a></li>
+                          <li><a href="#longin"><img src="photo/user.svg" alt="user_icon" /></a></li>
+                      </ul>
+                  </div>
+              </di>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="carousel-container">
+        <!-- <div class="slide">
+          <img src="https://steamcdn-a.akamaihd.net/steam/apps/730/page_bg_generated_v6b.jpg?t=1554409309" alt="background-slide" class="slide-bg">
+          <img src="https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1554409309" alt="foreground-slide" class="slide-fg">
+        </div> -->
+        <!-- Next and previous buttons -->
+        <a  class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!--Body  -->
+      <div class="all-games">
+        <div class="filter-container">
+          <!-- <h3 style= "color:white;">Filter:</h3> -->
+          
+            <!-- below is for filter options -->
+            <div class="filter-option"> 
+              <label for="genres">Genres</label>
+                  <select id="genres">
+                    <option value="free to play">free to play</option>
+                  </select>
+            </div>
+            <!-- <div class="filter-option"> 
+              <label for="price">Price</label>
+              <select id="price">
+                <option value="free">Free</option>
+                <option value="less than $4.99">Less than $4.99</option>
+                <option value="less than $9.99">Less than $9.99</option>
+                <option value="less than $14.99">Less than $14.99</option>
+                <option value="more than $15">More than $15</option>
+              </select>
+            </div> -->
+            
+            <div class="filter-option"> 
+              <label for="steamspy_tags">Tags</label>
+              <select id="steamspy_tags">
+                <!-- <option value="free to play">free to play</option> -->
+              </select>
+            </div>
+            <!-- DONE for filter options -->
+            <button class="filter-btn" id="filter-btn" onclick="filterBtn()">Filter</button>
+        </div>
+        <div id="game_list"></div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
