@@ -96,7 +96,7 @@ renderFeaturedGames();
         console.log(err);
     }
 }
-
+//render games with queries, genres and tags
 const renderGames = async ({q, genres, tag}) => { //q= "dota", value:10
     try {
         const allGames = await getGames({q, genres, tag}); ///== {q= "", value:""}
